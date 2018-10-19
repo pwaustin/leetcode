@@ -12,5 +12,3 @@ def to_lower_case(str):
             str_list[i] = d[str_list[i]]
     return ''.join(str_list)
 
-
-print(to_lower_case("LOVELY"))
