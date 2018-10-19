@@ -1,4 +1,4 @@
-def intToRoman(num):
+def int_to_roman(num):
     """
     :type num: int
     :rtype: str
