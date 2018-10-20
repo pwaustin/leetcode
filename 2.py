@@ -6,9 +6,19 @@ class ListNode:
 
 def add_two_numbers(l1, l2):
     """
+    Problem:
+    You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse
+    order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+
+    You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
     :type l1: ListNode
     :type l2: ListNode
     :rtype: ListNode
+
+    Solution:
+    Until the linked lists are exhausted simply sum digit by digit, handling the carry from the previous digit as
+    necessary.
     """
     carry = 0
     result_head = ListNode(0)

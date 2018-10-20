@@ -1,13 +1,16 @@
 def all_paths_source_target(graph):
     """
-    Source node is specified as node 0, target node is specified as node N-1.
-
-    DFS for the target node beginning at the source node, maintaining the path;
-    if the target node is reached, add that path to the list of valid paths. We
-    are given that the graph is acyclic.
+    Problem:
+    Given a directed, acyclic graph of N nodes.  Find all possible paths from node 0 to node N-1, and return them in
+    any order. The graph is given as follows:  the nodes are 0, 1, ..., graph.length - 1.  graph[i] is a list of all
+    nodes j for which the edge (i, j) exists.
 
     :type graph: List[List[int]]
     :rtype: List[List[int]]
+
+    Solution:
+    DFS for the target node beginning at the source node, maintaining the path; if the target node is reached, add that
+    path to the list of valid paths.
     """
 
     def dfs(node, path):

@@ -1,7 +1,16 @@
 def majority_element(nums):
     """
+    Problem:
+    Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times. The algorithm should run in
+    linear time and in O(1) space.
+
     :type nums: List[int]
     :rtype: List[int]
+
+    Solution:
+    There are at most two such elements. We implement a version of the Boyer-Moore majority vote algorithm with two
+    candidates and two counts to do this in O(n) time and O(1) space. The first pass finds two candidate values, then
+    we verify the candidates actually occurred at least the required number of times.
     """
 
     if not nums:
