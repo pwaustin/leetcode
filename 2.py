@@ -20,6 +20,7 @@ def add_two_numbers(l1, l2):
     Until the linked lists are exhausted simply sum digit by digit, handling the carry from the previous digit as
     necessary.
     """
+
     carry = 0
     result_head = ListNode(0)
     current = result_head

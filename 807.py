@@ -16,7 +16,7 @@ def max_increase_keeping_skyline(grid):
 
     Solution:
     Find the max height for all rows and columns. Each location on the grid can be increased by the min of the max
-    between the max values for its column and row, i.e. return the sum of those differences.
+    values in its column and row, i.e. return the sum of those differences.
     """
 
     max_row_height = [max(row) for row in grid]
